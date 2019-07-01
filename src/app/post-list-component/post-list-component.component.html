@@ -1,0 +1,10 @@
+<div class="list-group" style="margin: 5px;">
+  <h3> Last posts </h3>
+  <app-post-list-item-component
+                *ngFor="let aInitListPost of aInitListPosts"
+                [postTitle]="aInitListPost.title"
+                [postContent]="aInitListPost.content"
+  ></app-post-list-item-component>
+  <br/>
+  <a href="./">Click here to see older post</a>
+</div>
